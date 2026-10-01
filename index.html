@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cryptography | Ancient Ciphers to Modern Security</title>
+
+    <meta name="description"
+        content="Explore the history, methods, applications and future of cryptography with an interactive Caesar Cipher visualization.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-grid"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                <span class="logo-symbol">{ }</span>
+                <span>CRYPTO<span class="accent">LAB</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                ☰
+            </button>
+
+            <nav id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#history">History</a>
+                <a href="#methods">Methods</a>
+                <a href="#caesar">Caesar Lab</a>
+                <a href="#applications">Applications</a>
+                <a href="#future">Future</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span class="status-dot"></span>
+                    SECURING INFORMATION SINCE ANCIENT TIMES
+                </div>
+
+                <h1>
+                    Cryptography
+                    <span>From Ancient Ciphers</span>
+                    to Modern Security
+                </h1>
+
+                <p class="hero-description">
+                    Discover how humans transformed secret messages into the
+                    mathematical foundation of modern digital security.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#caesar" class="btn btn-primary">
+                        Try Caesar Cipher →
+                    </a>
+
+                    <a href="#about" class="btn btn-secondary">
+                        Explore Cryptography
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="stat">
+                        <strong>2000+</strong>
+                        <span>Years of History</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>4</strong>
+                        <span>Core Methods</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>∞</strong>
+                        <span>Digital Possibilities</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="crypto-lock">
+
+                    <div class="lock-shackle"></div>
+
+                    <div class="lock-body">
+                        <div class="lock-keyhole"></div>
+                    </div>
+
+                </div>
+
+                <div class="floating-code code-one">01001011</div>
+                <div class="floating-code code-two">AES-256</div>
+                <div class="floating-code code-three">RSA</div>
+                <div class="floating-code code-four">SHA-256</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="section" id="about">
+
+            <div class="section-heading">
+                <span class="section-number">01</span>
+
+                <div>
+                    <p class="eyebrow">THE BASICS</p>
+                    <h2>What is Cryptography?</h2>
+                </div>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p class="large-text">
+                        Cryptography is the science and practice of protecting
+                        information by transforming it into a form that
+                        unauthorized people cannot understand.
+                    </p>
+
+                    <p>
+                        The word comes from the Greek words
+                        <strong>kryptos</strong>, meaning hidden, and
+                        <strong>graphein</strong>, meaning writing.
+                    </p>
+
+                    <p>
+                        Modern cryptography uses mathematics, algorithms and
+                        computational techniques to protect digital information
+                        during storage and communication.
+                    </p>
+
+                </div>
+
+                <div class="security-principles">
+
+                    <div class="principle-card">
+                        <span>01</span>
+                        <h3>Confidentiality</h3>
+                        <p>
+                            Ensures that only authorized people can access
+                            information.
+                        </p>
+                    </div>
+
+                    <div class="principle-card">
+                        <span>02</span>
+                        <h3>Integrity</h3>
+                        <p>
+                            Helps detect whether information has been modified.
+                        </p>
+                    </div>
+
+                    <div class="principle-card">
+                        <span>03</span>
+                        <h3>Authentication</h3>
+                        <p>
+                            Verifies the identity of users and systems.
+                        </p>
+                    </div>
+
+                    <div class="principle-card">
+                        <span>04</span>
+                        <h3>Non-Repudiation</h3>
+                        <p>
+                            Provides evidence that a particular action or
+                            message originated from a specific party.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HISTORY -->
+        <section class="section dark-section" id="history">
+
+            <div class="section-heading">
+                <span class="section-number">02</span>
+
+                <div>
+                    <p class="eyebrow">THE EVOLUTION</p>
+                    <h2>A Journey Through Time</h2>
+                </div>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">~100 BCE</div>
+
+                    <div class="timeline-content">
+                        <h3>Caesar Cipher</h3>
+                        <p>
+                            Julius Caesar reportedly used a substitution
+                            technique that shifted letters by a fixed number
+                            of positions.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">1500s</div>
+
+                    <div class="timeline-content">
+                        <h3>Vigenère Cipher</h3>
+                        <p>
+                            A polyalphabetic substitution cipher that used
+                            multiple Caesar-like shifts controlled by a key.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">1940s</div>
+
+                    <div class="timeline-content">
+                        <h3>Enigma</h3>
+                        <p>
+                            Electromechanical rotor machines were used to
+                            encrypt military communications during World War II.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">1970s</div>
+
+                    <div class="timeline-content">
+                        <h3>Modern Cryptography</h3>
+                        <p>
+                            Public-key cryptography and standards such as DES
+                            transformed digital security.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">Today</div>
+
+                    <div class="timeline-content">
+                        <h3>Digital Security</h3>
+                        <p>
+                            Algorithms such as AES, RSA, ECC and SHA are used
+                            across modern computing and communications.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- METHODS -->
+        <section class="section" id="methods">
+
+            <div class="section-heading">
+                <span class="section-number">03</span>
+
+                <div>
+                    <p class="eyebrow">CORE CONCEPTS</p>
+                    <h2>Methods of Cryptography</h2>
+                </div>
+            </div>
+
+
+            <div class="methods-grid">
+
+                <article class="method-card">
+
+                    <div class="method-icon">🔐</div>
+
+                    <span class="method-number">01</span>
+
+                    <h3>Symmetric Encryption</h3>
+
+                    <p>
+                        The same secret key is used to encrypt and decrypt
+                        information.
+                    </p>
+
+                    <div class="method-examples">
+                        AES · ChaCha20
+                    </div>
+
+                </article>
+
+
+                <article class="method-card featured-method">
+
+                    <div class="method-icon">🔑</div>
+
+                    <span class="method-number">02</span>
+
+                    <h3>Asymmetric Encryption</h3>
+
+                    <p>
+                        Uses a pair of mathematically related keys: a public
+                        key and a private key.
+                    </p>
+
+                    <div class="method-examples">
+                        RSA · ECC
+                    </div>
+
+                </article>
+
+
+                <article class="method-card">
+
+                    <div class="method-icon">#</div>
+
+                    <span class="method-number">03</span>
+
+                    <h3>Hashing</h3>
+
+                    <p>
+                        Converts data into a fixed-length digest designed to
+                        make reversing the original input impractical.
+                    </p>
+
+                    <div class="method-examples">
+                        SHA-256 · SHA-3
+                    </div>
+
+                </article>
+
+
+                <article class="method-card">
+
+                    <div class="method-icon">✍</div>
+
+                    <span class="method-number">04</span>
+
+                    <h3>Digital Signatures</h3>
+
+                    <p>
+                        Uses cryptographic techniques to verify the origin and
+                        integrity of digital messages or documents.
+                    </p>
+
+                    <div class="method-examples">
+                        RSA-PSS · ECDSA
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CAESAR CIPHER -->
+        <section class="section caesar-section" id="caesar">
+
+            <div class="section-heading">
+
+                <span class="section-number">04</span>
+
+                <div>
+                    <p class="eyebrow">INTERACTIVE LAB</p>
+                    <h2>Caesar Cipher Visualization</h2>
+                </div>
+
+            </div>
+
+            <p class="section-intro">
+                Experiment with one of history's simplest substitution ciphers.
+                Enter a message and choose how many positions each letter
+                should shift.
+            </p>
+
+
+            <div class="cipher-lab">
+
+                <div class="cipher-controls">
+
+                    <div class="input-group">
+
+                        <label for="cipherInput">
+                            YOUR MESSAGE
+                        </label>
+
+                        <textarea
+                            id="cipherInput"
+                            placeholder="Type your secret message..."
+                        >HELLO WORLD</textarea>
+
+                    </div>
+
+
+                    <div class="shift-control">
+
+                        <div class="shift-header">
+
+                            <label for="shiftRange">
+                                SHIFT VALUE
+                            </label>
+
+                            <span id="shiftValue">3</span>
+
+                        </div>
+
+                        <input
+                            type="range"
+                            id="shiftRange"
+                            min="0"
+                            max="25"
+                            value="3"
+                        >
+
+                        <div class="range-labels">
+                            <span>0</span>
+                            <span>13</span>
+                            <span>25</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="cipher-buttons">
+
+                        <button class="btn btn-primary" id="encryptBtn">
+                            Encrypt
+                        </button>
+
+                        <button class="btn btn-secondary" id="decryptBtn">
+                            Decrypt
+                        </button>
+
+                        <button class="clear-btn" id="clearBtn">
+                            Clear
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="cipher-output">
+
+                    <div class="output-header">
+                        <span>OUTPUT</span>
+                        <button id="copyBtn">Copy</button>
+                    </div>
+
+                    <div class="output-text" id="cipherOutput">
+                        KHOOR ZRUOG
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Alphabet Visualization -->
+            <div class="alphabet-visualization">
+
+                <div class="alphabet-row">
+
+                    <span class="alphabet-label">ORIGINAL</span>
+
+                    <div class="letters" id="originalLetters"></div>
+
+                </div>
+
+
+                <div class="shift-arrow">
+                    ↓
+                    <span id="shiftDescription">
+                        Each letter moves 3 positions
+                    </span>
+                </div>
+
+
+                <div class="alphabet-row">
+
+                    <span class="alphabet-label">SHIFTED</span>
+
+                    <div class="letters" id="shiftedLetters"></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="cipher-explanation">
+
+                <div>
+                    <span class="formula">C = (P + K) mod 26</span>
+
+                    <p>
+                        <strong>Encryption:</strong> Each plaintext letter
+                        is shifted forward by the key.
+                    </p>
+                </div>
+
+                <div>
+                    <span class="formula">P = (C - K) mod 26</span>
+
+                    <p>
+                        <strong>Decryption:</strong> The shift is reversed to
+                        recover the original message.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- APPLICATIONS -->
+        <section class="section dark-section" id="applications">
+
+            <div class="section-heading">
+
+                <span class="section-number">05</span>
+
+                <div>
+                    <p class="eyebrow">REAL WORLD</p>
+                    <h2>Where Cryptography Is Used</h2>
+                </div>
+
+            </div>
+
+
+            <div class="applications-grid">
+
+                <div class="application">
+                    <div class="application-icon">🌐</div>
+                    <h3>Web Security</h3>
+                    <p>
+                        TLS helps protect information exchanged between
+                        browsers and websites.
+                    </p>
+                </div>
+
+
+                <div class="application">
+                    <div class="application-icon">💳</div>
+                    <h3>Online Banking</h3>
+                    <p>
+                        Cryptographic protocols help protect financial
+                        transactions and account information.
+                    </p>
+                </div>
+
+
+                <div class="application">
+                    <div class="application-icon">💬</div>
+                    <h3>Messaging</h3>
+                    <p>
+                        End-to-end encryption can protect messages from
+                        unauthorized access during transmission.
+                    </p>
+                </div>
+
+
+                <div class="application">
+                    <div class="application-icon">☁</div>
+                    <h3>Cloud Storage</h3>
+                    <p>
+                        Encryption can protect stored data and information
+                        transferred to cloud services.
+                    </p>
+                </div>
+
+
+                <div class="application">
+                    <div class="application-icon">🔑</div>
+                    <h3>Password Protection</h3>
+                    <p>
+                        Password systems commonly use password hashing and
+                        other security mechanisms.
+                    </p>
+                </div>
+
+
+                <div class="application">
+                    <div class="application-icon">📱</div>
+                    <h3>Mobile Devices</h3>
+                    <p>
+                        Cryptography helps protect device storage,
+                        communications and authentication.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FUTURE -->
+        <section class="section" id="future">
+
+            <div class="section-heading">
+
+                <span class="section-number">06</span>
+
+                <div>
+                    <p class="eyebrow">LOOKING AHEAD</p>
+                    <h2>The Future of Cryptography</h2>
+                </div>
+
+            </div>
+
+
+            <div class="future-content">
+
+                <div class="future-main">
+
+                    <h3>
+                        Preparing for a
+                        <span>Post-Quantum</span> World
+                    </h3>
+
+                    <p>
+                        Cryptography continues to evolve as computing technology
+                        changes. Large-scale quantum computers could threaten
+                        some widely used public-key algorithms.
+                    </p>
+
+                    <p>
+                        Researchers are therefore developing
+                        <strong>post-quantum cryptography</strong> algorithms
+                        designed to resist attacks from both classical and
+                        quantum computers.
+                    </p>
+
+                </div>
+
+
+                <div class="future-cards">
+
+                    <div class="future-card">
+                        <span>01</span>
+                        <h4>Quantum Resistance</h4>
+                        <p>
+                            New algorithms are being developed to withstand
+                            potential quantum attacks.
+                        </p>
+                    </div>
+
+
+                    <div class="future-card">
+                        <span>02</span>
+                        <h4>AI & Security</h4>
+                        <p>
+                            Artificial intelligence may influence both
+                            cryptanalysis and security engineering.
+                        </p>
+                    </div>
+
+
+                    <div class="future-card">
+                        <span>03</span>
+                        <h4>Privacy</h4>
+                        <p>
+                            Privacy-preserving technologies will become
+                            increasingly important in connected systems.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER CTA -->
+        <section class="final-cta">
+
+            <div class="cta-content">
+
+                <span class="eyebrow">THE JOURNEY CONTINUES</span>
+
+                <h2>
+                    From simple letter shifts
+                    to mathematical security.
+                </h2>
+
+                <p>
+                    Cryptography remains one of the foundations of the
+                    digital world.
+                </p>
+
+                <a href="#caesar" class="btn btn-primary">
+                    Experiment with Caesar Cipher →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <span class="logo-symbol">{ }</span>
+                CRYPTO<span class="accent">LAB</span>
+            </div>
+
+            <p>
+                Cryptography: From Ancient Ciphers to Modern Security
+            </p>
+
+            <span class="copyright">
+                © 2026 CryptoLab · Educational Project
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

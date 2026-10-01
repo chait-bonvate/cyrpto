@@ -1,0 +1,84 @@
+{
+    "website": {
+        "title": "Cryptography: From Ancient Ciphers to Modern Security",
+        "version": "1.0"
+    },
+
+    "methods": [
+        {
+            "name": "Symmetric Encryption",
+            "description": "Uses the same secret key for encryption and decryption.",
+            "examples": [
+                "AES",
+                "ChaCha20"
+            ]
+        },
+        {
+            "name": "Asymmetric Encryption",
+            "description": "Uses a public key and a private key.",
+            "examples": [
+                "RSA",
+                "ECC"
+            ]
+        },
+        {
+            "name": "Hashing",
+            "description": "Transforms input data into a fixed-length digest.",
+            "examples": [
+                "SHA-256",
+                "SHA-3"
+            ]
+        },
+        {
+            "name": "Digital Signatures",
+            "description": "Help verify the origin and integrity of digital information.",
+            "examples": [
+                "RSA-PSS",
+                "ECDSA"
+            ]
+        }
+    ],
+
+    "history": [
+        {
+            "period": "~100 BCE",
+            "name": "Caesar Cipher",
+            "description": "A simple substitution technique based on shifting letters."
+        },
+        {
+            "period": "1500s",
+            "name": "Vigenere Cipher",
+            "description": "A polyalphabetic cipher using multiple shifts."
+        },
+        {
+            "period": "1940s",
+            "name": "Enigma",
+            "description": "An electromechanical rotor-based encryption machine."
+        },
+        {
+            "period": "1970s",
+            "name": "Modern Cryptography",
+            "description": "Public-key cryptography transformed digital security."
+        },
+        {
+            "period": "Today",
+            "name": "Digital Security",
+            "description": "Cryptography protects websites, communications, financial systems and data."
+        }
+    ],
+
+    "future": [
+        {
+            "topic": "Post-Quantum Cryptography",
+            "description": "Cryptographic algorithms designed to resist potential attacks from quantum computers."
+        },
+        {
+            "topic": "AI and Cryptography",
+            "description": "Artificial intelligence may influence cryptanalysis and security engineering."
+        },
+        {
+            "topic": "Privacy-Preserving Technologies",
+            "description": "New techniques aim to protect privacy while allowing useful computation and communication."
+        }
+    ]
+}
